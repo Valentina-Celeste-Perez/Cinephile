@@ -6,30 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cinephile</title>
     <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    <script src="/bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body class="contacbody">
 <!---------------------- encabezado -------------------->
 <header>
-    <h3 class="contactittle">CINEPHILE</h3>
-  <div class="flex-container contaccon">
-    <nav class="navegacioninc">
-
-        <a href="/index.html" class="flex-item in">Inicio</a>
-        <a href="/pages/peliculas.html" class="flex-item">Peliculas</a>
-        <a href="/pages/series.html" class="flex-item">Series</a>
-        <a href="/pages/contacto.html" class="flex-item">Contacto</a>
-           
-     </nav>
-  </div>
+    <h3 class="contactittle font display-4">CINEPHILE</h3>
+  <nav class="flex-container navbar navbar-expand-lg navbar-expand-md">
+      <div class=" navegacioninc g-advertencia container-fluid ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <ul class="menu navbar-nav mx-auto">
+  
+            <li><a class="nav-link active" aria-current="page" href="/index.html">Inicio</a></li>
+            <li><a class="nav-link" href="/pages/peliculas.html">Pelicula </a></li>
+            <li><a class="nav-link" href="/pages/series.html">Serie</a></li>
+            <li><a class="nav-link" href="/pages/contacto.html">Contacto</a></li>
+        </ul>
+       </div>
+      </div>
+  </nav> 
  
-<form class="contacto" action="">
+
+ <form class="contacto" action=""> 
     <h2>Escribenos</h2>
     <p>Es importante para nosotros saber tu opinion</p>
    <input type="text" name="nombre" placeholder="nombre"/>
-   <input type="text" name="correo" placeholder="nombre"/>
+   
+   <input type="text" name="correo" placeholder="email"/>
    <textarea name="mensaje" placeholder="escriba aqui su mensaje" ></textarea>
    <input type="button" value="ENVIAR" id="boton">
-</form>
+   
+ </form> 
 </header>
 </body>
 </html>

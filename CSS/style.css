@@ -34,6 +34,9 @@
     right: 0;
     color: white;
 }
+.font {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 /*color*/
 
@@ -43,7 +46,6 @@ h1 {
 
 h3 {
     color: goldenrod;
-    font-size: 300%;
     text-align: center;
 }
 
@@ -71,26 +73,28 @@ h4{
 }
 
 /*menus´*/
+
 .navegacioninc {
     width: 1000px;
-    margin: 45px auto;
+    margin: 5px auto;
     margin-left: 125px;
     margin-right: 50px;
     margin-top: 1px;
     background-color: rgb(218, 165, 32);
-    border-radius: 45px;
     z-index: 1000;
+   
 }
 
 .navegacion {
-    width: 1000px;
+    width: 90%;
     margin: 45px auto;
     margin-left: 125px;
     margin-right: 50px;
     margin-top: 1px;
     background: linear-gradient(to top right, black, rgb(63, 13, 13), rgb(104, 23, 84), #F7D358, goldenrod);
-    border-radius: 45px;
     z-index: 1000;
+    border-radius: 45px;
+
 }
 
 .navegacion ul {
@@ -112,12 +116,14 @@ h4{
 }
 
 .menu > li > a {
+
     display: block;
-    padding: 15px 20px;
+    padding: 15px 100px;
     color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size:18px;
+    font-size:20px;
     text-decoration: none;
+    width: 150px;
 }
 
 .menu li a:hover{
@@ -126,12 +132,14 @@ h4{
 }
 
 /*submenu*/
+.bodys {
+    background-color: rgba(0, 0, 0, 0.929);
+}
 
-.submenu {
+.dropdown-menu .submenu {
     position: absolute;
-    background: rgba(218, 165, 32, 0.664);
+    background-color: rgba(218, 165, 32, 0.664);
     width: 130px;
-    visibility: hidden;
     opacity: 0;
     transition: "opacity 1.5s";
     z-index: 1000;
@@ -261,21 +269,7 @@ h4 {
 }
 
 
-.flex-item { 
-    background-color: rgb(248, 193, 66);
-    border-radius: 30%;
-    width: 200px;
-    margin: -4px;
-    position: relative;
-    text-align: center;
-    top: 20px;
-    line-height: 10px;
-    font-size: calc(1em + 1vw);
-    text-decoration: none;
-    
-    
-    
-}
+
 .inicio{
     background-color: black;
 }

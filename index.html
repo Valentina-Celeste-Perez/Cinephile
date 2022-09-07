@@ -7,28 +7,38 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>cinephile</title>
 	<link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/bootstrap-5.2.0-dist/css/bootstrap.min.css">
+	<script src="/bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body class="inicio">
 <!--------------------------------  encabezado  ------------------------>
- <header>
-	 <div class="flex-container">
-	   <nav class="navegacioninc">
-              
-		  <a href="/index.html" class="flex-item in">Inicio</a>
-		  <a href="/pages/peliculas.html" class="flex-item">Peliculas</a>
-          <a href="/pages/series.html" class="flex-item">Series</a>
-		  <a href="/pages/contacto.html" class="flex-item">Contacto</a>
-		
-       </nav>
-	 </div>
-  </header>
- 
+<header>
+<nav class="flex-container navbar navbar-expand-lg navbar-expand-md">
+    <div class=" navegacioninc g-advertencia container-fluid ">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+        <ul class="menu navbar-nav mx-auto">
+
+          <li><a class="nav-link active" aria-current="page" href="/index.html">Inicio</a></li>
+          <li><a class="nav-link" href="/pages/peliculas.html">Pelicula </a></li>
+          <li><a class="nav-link" href="/pages/series.html">Serie</a></li>
+          <li><a class="nav-link" href="/pages/contacto.html">Contacto</a></li>
+      
+		</ul>
+      </div>
+    </div>
+  </nav>
+ </header>
+
 <!--------------------------- contenido principal --------------------------->
 <main>
   <div class="conteinerr">
 	 <img src="/logo/Negro y Blanco Moderno Íconos Festival de Cine Evento Logo.jpg" id="img" alt="logo">
-	 <p class="texto"> Bienvenidos<br> <br> En este sitio vas a poder encontrar las peliculas y serires mas populares, en español. <br> A un click de tu entretenimiento </p>
+	 <p class="texto"> <em> <u> Bienvenidos </u> <br> <br> En este sitio vas a poder encontrar las peliculas y serires mas populares, en español. <br> A un click de tu entretenimiento</em> </p>
   </div>
 </main>
 <!-------------------------- pie de pagina ----------------------------->

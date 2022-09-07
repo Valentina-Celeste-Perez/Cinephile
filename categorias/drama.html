@@ -11,34 +11,44 @@
 <body>
    <!------------------    encabezado   ---------------->
  </header>
-    <h3>CINEPHILE</h3>
+    <h3 class="font display-4">CINEPHILE</h3>
     <section>
       <form action="/search" id="searchthis" method="get" style="display: inline;">
         <input id="search-box" name="q" size="38" type="text" placeholder="Escribe y pulsa intro" /> 
         <input id="search-btn" type="submit" value="GO" />
       </form>
      </section>
-   <nav class="navegacion">
-     <ul class="menu">
-        <li><a href="/index.html">inicio</a></li>
-        <li><a href="/pages/peliculas.html">pelicula</a></li>
-        <li><a href="/pages/series.html">series</a></li>
-        <li><a href="">categorias</a>
-          <ul class="submenu">
-            <li><a href="/categorias/comedia.html">comedia</a></li>
-            <li><a href="/categorias/drama.html">drama</a></li>
-            <li><a href="/categorias/romance.html">romance</a></li>
-            <li><a href="/categorias/familiar.html">familiar</a></li>
-            <li><a href="/categorias/infantil.html">infantil</a></li>
-            <li><a href="/categorias/suspenso.html">suspenso</a></li>
-            <li><a href="/categorias/terror.html">terror</a></li>
-            <li><a href="/categorias/ciencia-ficcion.html">ciencia ficcion</a></li>
-          </ul>
-        </li>
-           <li><a href="/pages/contacto.html">contacto</a></li>
-       </ul>
-   </nav>
- </header>
+<nav class=" navegacion navbar navbar-expand-lg">
+      <div class="container-fluid">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+         </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             
+        <ul class=" menu navbar-nav mx-auto">
+     
+               <li><a class="nav-link active" aria-current="page" href="/index.html">Inicio</a></li>
+               <li><a class="nav-link" href="/pages/peliculas.html">Pelicula</a></li>
+               <li><a class="nav-link" href="/pages/series.html">Serie</a></li>
+               <li class="dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Categorias
+                 </a>
+            <ul class="submenu ">
+                   <li><a href="/categorias/comedia.html">Comedia</a></li>
+                   <li><a href="/categorias/familiar.html">Familiar</a></li>
+                   <li><a href="/categorias/infantil.html">Infantil</a></li>
+                   <li><a href="/categorias/drama.html">Drama</a></li>
+                   <li><a href="/categorias/ciencia-ficcion.html">Ciencia Ficcion</a></li>
+                   <li><a href="/categorias/suspenso.html">Suspenso</a></li>
+                   <li><a href="/categorias/terror.html">Terror</a></li>
+                 </ul>
+               </li>
+              <li><a class="nav-link" href="/pages/contacto.html">Contacto</a></li>
+           </ul>
+        </div>
+       </div>
+  </nav>
+</header>
    <!-----------------    contenido principal   -------------------->
 
   <main>
