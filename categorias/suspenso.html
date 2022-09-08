@@ -7,17 +7,22 @@
    <title>cinephile</title>
    <link rel="stylesheet" href="/CSS/style.css">
 </head>
-<body>
-<!------------------------  encabezado -------------------------->
+<body class="bodys">
+<!------------------------------  encabezado   ----------------------------->
 <header>
-   <h3>CINEPHILE</h3>
-   <section>
-      <form>
-         <input type="text" placeholder="buscar" name="buscar">
-         <button type="buscar">buscar</button>
-      </form>
-   </section>
- <nav class=" navegacion navbar navbar-expand-lg">
+  <h3 class="font display-4">CINEPHILE</h3>
+  
+  <div class="navbar navbarr container-fluid">
+   <a class="navbar-brand"></a>
+   <form class="d-flex mx-3" role="search">
+     <input class="bg-transparent me-2 rounded-pill" type="search" placeholder="Busca" aria-label="Search">
+     <button class="btn btn-outline-warning" pe="submit">Buscar</button>
+     <link rel="stylesheet" href="/bootstrap-5.2.0-dist/css/bootstrap.min.css">
+     <script src="/bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
+   </form>
+  </div>
+  <!-------------------------------------- menu ------------------------------------------>
+ <nav class=" navegacion navbar navbar-expand-lg mx-4">
     <div class="container-fluid">
        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon"></span>
@@ -32,7 +37,7 @@
              <li class="dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                  Categorias
                </a>
-          <ul class="submenu ">
+          <ul class="submenu dropdown-menu">
                  <li><a href="/categorias/comedia.html">Comedia</a></li>
                  <li><a href="/categorias/familiar.html">Familiar</a></li>
                  <li><a href="/categorias/infantil.html">Infantil</a></li>
@@ -50,65 +55,102 @@
 </header>
 <!----------------------  contenido principal ----------------------->
 <main>
-   <section>
-      <div class="contenedor-imagenes">
-         <div class="portadas">
-           <a href="link">
-             <img src="portada de la serie o pelicula" alt="nombre">
-           </a>
+  <sectio>
+     <div class=" contenedor-imagenes container "> 
+
+      <div class="row row-cols-2 row-cols-lg-5 ">
+
+        <div class="portadas col mx-auto">
+          <a href="link de la pelicula">
+            <img src="/portadas/pretty liar.jpg" alt="pecado">
+            <div class="overlay">
+            <strong>Pretty Little Liars <br> Un Nuevo Pecado</strong>
+            <h2>Hace veinte años, una serie de trágicos eventos casi destrozaron a Millwood. Ahora, en la actualidad, un nuevo grupo de pequeñas mentirosas se ve atormentado por un asaltante desconocido. </h2>
+               <h4>Audio: Latino</h4>
+            <h5>Creador:Roberto Aguirre-Sacasa 
+              Elenco: Alex Aiono, Bailee Madison, Chandler Kinney, Elena Goode, Eric Johnson</h5>
+             <h6> Género:Drama, Suspenso <br> 8.5/10 </h6>
+            </div>
+         </a>
+        </div>
+
+        <div class=" portadas col mx-auto">
+          <a href="link de la pelicula">
+            <img src="/portadas/C_digo_Emperador-542616770-mmed.jpg"  alt="codg.empe">
+            <div class="overlay">
+               <strong> Código Emperador  2022 </strong>
+               <h2>Un agente de inteligencia con la tarea de incriminar a un político sin trapos sucios debe decidir si aún hay líneas que no cruzará.</h2> 
+               <h4>Audio: Latino</h4>
+               <h5>   Director: Jorge Coira, 
+                  Elenco: Alexandra Masangkay, Arón Piper, Denis Gómez, Fran Lareu, Georgina Amorós 
+               </h5>
+                <h6> Género: Acción,Suspenso <br>  calificacion: 8/10 </h6>
+            </div>
+         </a>
+        </div>
+           
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula o Serie">
+            <img src="imagen" alt="nombre">
+         </a>
          </div>
-         <div class="portadas">
-           <a href="link">
-             <img src="portada de la serie o pelicula" alt="nombre">
-           </a>
+         
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula o Serie">
+            <img src="imagen" alt="nombre">
+         </a>
          </div>
-         <div class="portadas">
-           <a href="link">
-             <img src="portada de la serie o pelicula" alt="nombre">
-           </a>
+         
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula o Serie">
+            <img src="imagen" alt="nombre">
+         </a>
          </div>
-         <div class="portadas">
-           <a href="link">
-             <img src="portada de la serie o pelicula" alt="nombre">
-           </a>
+         
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula o Serie">
+            <img src="imagen" alt="nombre">
+         </a>
          </div>
-         <div class="portadas">
-           <a href="link">
-             <img src="portada de la serie o pelicula" alt="nombre">
-           </a>
+         
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula o Serie">
+            <img src="imagen" alt="nombre">
+         </a>
          </div>
-         <div class="portadas">
-           <a href="link">
-             <img src="portada de la serie o pelicula" alt="nombre">
-           </a>
+         
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula o Serie">
+            <img src="imagen" alt="nombre">
+         </a>
          </div>
-         <div class="portadas">
-           <a href="link">
-             <img src="portada de la serie o pelicula" alt="nombre">
-           </a>
+         
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula o Serie">
+            <img src="imagen" alt="nombre">
+         </a>
          </div>
-         <div class="portadas">
-           <a href="link">
-             <img src="portada de la serie o pelicula" alt="nombre">
-           </a>
+         
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula o Serie">
+            <img src="imagen" alt="nombre">
+         </a>
          </div>
-         <div class="portadas">
-           <a href="link">
-             <img src="portada de la serie o pelicula" alt="nombre">
-           </a>
+         
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula o Serie">
+            <img src="imagen" alt="nombre">
+         </a>
          </div>
-         <div class="portadas">
-           <a href="link">
-             <img src="portada de la serie o pelicula" alt="nombre">
-           </a>
+         
          </div>
         </div>
   </section>   
  </main>
  <!----------------  pie de pagina  ---------------->
-<hr>
+
     <footer>
-      <h5>texto</h5>
+      <h5>2022</h5>
     </footer>
 
    </body>

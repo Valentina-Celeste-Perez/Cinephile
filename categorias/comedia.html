@@ -6,107 +6,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cinephile</title>
     <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    <script src="/bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
-<!---------------------  encabezado  ----------------->
-<header>
-    <h3 class="font display-4" >CINEPHILE</h3>
-    <section>
-      <form action="/search" id="searchthis" method="get" style="display: inline;">
-        <input id="search-box" name="q" size="38" type="text" placeholder="Escribe y pulsa intro" /> 
-        <input id="search-btn" type="submit" value="GO" />
+<body class="bodys">
+  <!-----------------------  encabezado   ------------------->
+  <header>
+     <h3 class="font display-4">CINEPHILE</h3>
+    
+     <div class="navbar navbarr container-fluid">
+      <a class="navbar-brand"></a>
+      <form class="d-flex mx-3" role="search">
+        <input class="bg-transparent me-2 rounded-pill" type="search" placeholder="Busca" aria-label="Search">
+        <button class="btn btn-outline-warning" pe="submit">Buscar</button>
       </form>
-     </section>
- <nav class=" navegacion navbar navbar-expand-lg">
-     <div class="container-fluid">
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-         </button>
-       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-             
-        <ul class=" menu navbar-nav mx-auto">
-     
-               <li><a class="nav-link active" aria-current="page" href="/index.html">Inicio</a></li>
-               <li><a class="nav-link" href="/pages/peliculas.html">Pelicula</a></li>
-               <li><a class="nav-link" href="/pages/series.html">Serie</a></li>
-               <li class="dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                   Categorias
-                 </a>
-            <ul class="submenu ">
-                   <li><a href="/categorias/comedia.html">Comedia</a></li>
-                   <li><a href="/categorias/familiar.html">Familiar</a></li>
-                   <li><a href="/categorias/infantil.html">Infantil</a></li>
-                   <li><a href="/categorias/drama.html">Drama</a></li>
-                   <li><a href="/categorias/ciencia-ficcion.html">Ciencia Ficcion</a></li>
-                   <li><a href="/categorias/suspenso.html">Suspenso</a></li>
-                   <li><a href="/categorias/terror.html">Terror</a></li>
-                 </ul>
-               </li>
-              <li><a class="nav-link" href="/pages/contacto.html">Contacto</a></li>
-           </ul>
-         </div>
-       </div>
-  </nav>
-</header>  
+    </div>
+  <!-------------------------------------- menu ------------------------------------------>
+  <nav class=" navegacion navbar navbar-expand-lg mx-4">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <ul class=" menu navbar-nav mx-auto">
+  
+            <li><a class="nav-link active" aria-current="page" href="/index.html">Inicio</a></li>
+            <li><a class="nav-link" href="/pages/peliculas.html">Pelicula</a></li>
+            <li><a class="nav-link" href="/pages/series.html">Serie</a></li>
+            <li class="dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categorias
+              </a>
+              <ul class="submenu dropdown-menu">
+                <li><a href="/categorias/comedia.html">Comedia</a></li>
+                <li><a href="/categorias/familiar.html">Familiar</a></li>
+                <li><a href="/categorias/infantil.html">Infantil</a></li>
+                <li><a href="/categorias/drama.html">Drama</a></li>
+                <li><a href="/categorias/ciencia-ficcion.html">Ciencia Ficcion</a></li>
+                <li><a href="/categorias/suspenso.html">Suspenso</a></li>
+                <li><a href="/categorias/terror.html">Terror</a></li>
+              </ul>
+            </li>
+           <li><a class="nav-link" href="/pages/contacto.html">Contacto</a></li>
+         </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 <!--------------------- contenido principal  ------------------->
-    <main>
-      <section>
-        <div class="contenedor-imagenes">
-          <div class="portadas">
-            <a href="link">
-              <img src="portada de la serie o pelicula" alt="nombre">
-            </a>
-          </div>
-          <div class="portadas">
-            <a href="link">
-              <img src="portada de la serie o pelicula" alt="nombre">
-            </a>
-          </div>
-          <div class="portadas">
-            <a href="link">
-              <img src="portada de la serie o pelicula" alt="nombre">
-            </a>
-          </div>
-          <div class="portadas">
-            <a href="link">
-              <img src="portada de la serie o pelicula" alt="nombre">
-            </a>
-          </div>
-          <div class="portadas">
-            <a href="link">
-              <img src="portada de la serie o pelicula" alt="nombre">
-            </a>
-          </div>
-          <div class="portadas">
-            <a href="link">
-              <img src="portada de la serie o pelicula" alt="nombre">
-            </a>
-          </div>
-          <div class="portadas">
-            <a href="link">
-              <img src="portada de la serie o pelicula" alt="nombre">
-            </a>
-          </div>
-          <div class="portadas">
-            <a href="link">
-              <img src="portada de la serie o pelicula" alt="nombre">
-            </a>
-          </div>
-          <div class="portadas">
-            <a href="link">
-              <img src="portada de la serie o pelicula" alt="nombre">
-            </a>
-          </div>
-          <div class="portadas">
-            <a href="link">
-              <img src="portada de la serie o pelicula" alt="nombre">
-            </a>
-          </div>
+<main>
+  <sectio>
+     <div class=" contenedor-imagenes container "> 
+
+      <div class="row row-cols-2 row-cols-lg-5 ">
+
+        <div class="portadas col mx-auto">
+          <a href="link de la serie">
+             <img src="/portadas/Man-Vs-Bee.jpg" alt="manvsbee">
+            <div class="overlay">
+              <strong>Hombre vs Abeja</strong>
+              <h2>En esta serie de comedia, el torpe Trevor se enfrenta a una abeja muy astuta mientras cuida una elegante mansión, pero solo logra causar estragos. </h2>
+               <h4>Audio: Latino</h4>
+              <h5>Creador:Rowan Atkinson 
+                Elenco: Rowan Atkinson</h5>
+               <h6> Género:Comedia, Familiar <br> 7.5/10 </h6>
+            </div>
+         </a>
+        </div>
+
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula o serie">
+            <img src="imagen" alt="nombre">
+         </a>
          </div>
-     </section>    
-    </main>
+     
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula o serie">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+     
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula o serie">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+     
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula o serie">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+     
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula o serie">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+     
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula o serie">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+     
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula o serie">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+     
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula o serie">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+     
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula o serie">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+     </div>
+    </div>
+  </seccion>
+</main>
 <!---------------------- pie de pagina ----------------->
-<hr>
    </footer>
           <h5>texto</h5>
     </footer>

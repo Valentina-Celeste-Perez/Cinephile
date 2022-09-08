@@ -13,14 +13,17 @@
 <!------------------------- encabezado  ------------------------------>
  <header>
    <h3 class="font display-4">CINEPHILE</h3>
-   <section>
-    <form action="/search" id="searchthis" method="get" style="display: inline;">
-      <input id="search-box" name="q" size="38" type="text" placeholder="Escribe y pulsa intro" /> 
-      <input id="search-btn" type="submit" value="GO" />
+  
+   <div class="navbar navbarr container-fluid">
+    <a class="navbar-brand"></a>
+    <form class="d-flex mx-3" role="search">
+      <input class="bg-transparent me-2 rounded-pill" type="search" placeholder="Busca" aria-label="Search">
+      <button class="btn btn-outline-warning" pe="submit">Buscar</button>
     </form>
-   </section>
+  </div>
+<!------------------------------ menu ------------------------------->
 
-   <nav class=" navegacion navbar navbar-expand-lg">
+   <nav class=" navegacion navbar navbar-expand-lg mx-4 ">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -50,38 +53,15 @@
       </div>
     </div>
   </nav>
- </header>
+  </header> 
 <!---------------------- contenido principal  ---------------------------->
 <main>
-  <section>
+  <sectio>
+     <div class=" contenedor-imagenes container "> 
 
-    <div class="contenedor-imagenes">
-    
-        <div class="portadas">
-          <a href="link de la peciula">
-             <img src="/portadas/minioss.jpg" alt="minios">
-          </a>
-        </div>
-        
-         <div class="portadas">
-          <a href="link de la pelicula">
-            <img src="/portadas/pedirlo a gritos.jpg"  alt="pedirlo a gritos">
-          </a>
-         </div>
-       
-         <div class="portadas"> 
-          <a href="link de la pelicula">
-            <img src="/portadas/topgun.jpg"  alt="topgun">
-          </a>
-         </div>
+      <div class="row row-cols-2 row-col-lg-5">
 
-         <div class="portadas">
-          <a href="link de la pelicula">
-            <img src="/portadas/crecer apesta.jpg" alt="crecer apesta">
-          </a>
-         </div>
-
-         <div class="portadas">
+        <div class="portadas col mx-auto">
           <a href="link de la pelicula">
             <img src="/portadas/clon.jpg" alt="clon">
             <div class="overlay">
@@ -94,9 +74,9 @@
                 <h6> Género:Ciencia ficción, Suspenso <br> calificacion: 5/10 </h6>
             </div>
          </a>
-         </div>
+        </div>
 
-         <div class="portadas">
+        <div class=" portadas col mx-auto">
           <a href="link de la pelicula">
             <img src="/portadas/C_digo_Emperador-542616770-mmed.jpg"  alt="codg.empe">
             <div class="overlay">
@@ -111,35 +91,420 @@
          </a>
         </div>
 
-         <div class="portadas">
+        <div class=" portadas col mx-auto">
           <a href="link de la pelicula">
-            <img src="portada de la pelicula" alt="nombre">
+            <img src="/portadas/pedirlo a gritos.jpg"  alt="pedirlo a gritos">
           </a>
-         </div> 
+        </div>
 
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="/portadas/minioss.jpg" alt="minios">
+          </a>
+        </div>
+
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
         
-          <div class="portadas">
-            <a href="link de la pelicula">
-              <img src="portada de la pelicula" alt="nombre">
-            </a>
-          </div>
-
-          <div class="portadas">
-            <a href="link de la pelicula">
-              <img src="portada de la pelicula" alt="nombre">
-            </a>
-          </div>
-
-          <div class="portadas">
-            <a href="link de la pelicula">
-              <img src="portada de la pelicula" alt="nombre">
-            </a>
-          </div> 
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+        
+        <div class="portadas col mx-auto">
+          <a href="link de la peciula">
+            <img src="imagen" alt="nombre">
+         </a>
+         </div>
+         
       </div> 
-   </section>
+    </div>
+  </section>
 </main>
 <!----------------------------- pie de pagina ------------------------->
-<hr>
+
     <footer>
         <section>            
            <h5>2022</h5>

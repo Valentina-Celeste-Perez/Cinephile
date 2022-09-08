@@ -84,9 +84,11 @@ h4{
     z-index: 1000;
    
 }
-
+.navbarr {
+    right: 37%;
+}
 .navegacion {
-    width: 90%;
+    width: auto;
     margin: 45px auto;
     margin-left: 125px;
     margin-right: 50px;
@@ -133,10 +135,10 @@ h4{
 
 /*submenu*/
 .bodys {
-    background-color: rgba(0, 0, 0, 0.929);
+    background: rgba(0, 0, 0, 0.929);
 }
 
-.dropdown-menu .submenu {
+.submenu {
     position: absolute;
     background-color: rgba(218, 165, 32, 0.664);
     width: 130px;
@@ -158,6 +160,8 @@ h4{
     visibility: visible;
     opacity: 1;
 }
+
+
 
 /*estilos*/
 
@@ -185,22 +189,6 @@ h4 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/*search*/
-
-#searchthis #search-btn{display:none;}
-#searchthis #search-box{
-    background: transparent;
-    border:none;
-    color: rgb(218, 209, 209);
-    border: 1px solid goldenrod;
-    height:30px;
-    margin-left: 1000px;
-    float: center;
-    width:197px;
-    font: normal normal 14px 'Arial';
-    letter-spacing: 1px;
-    text-align:center;
-}
 
 /*contacto*/
    
@@ -285,26 +273,22 @@ h4 {
 }
 
 /*portadas animaciones*/
-.bodypel{
-    background: linear-gradient( to bottom left, black, rgb(63, 13, 13), rgb(104, 23, 84), #F7D358);
-} 
+
 
 .contenedor-imagenes {
     display: flex;
-    width: 85%;
-    margin: auto;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-around;
     border-radius: 3px;
 }
 
 .contenedor-imagenes .portadas {
-    width: 22%;
+    width: 250px;
     position: relative;
     height: 350px;
     margin-bottom: 29px;
-    box-shadow: 0px 0px 3px 0px goldenrod;
-    border-radius: 5%;
+    margin-left: 35px;
+   
 }
 
 .portadas img {
@@ -312,6 +296,7 @@ h4 {
     height: 100%;
     object-fit: cover;
     border-radius: 5%;
+    position: relative;
 }
 
 .overlay {
@@ -331,8 +316,8 @@ h4 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 18px;
     position: relative;
-    top: 4%;
-    left: 2%;
+    top: 3%;
+    left: 5%;
     text-align: center;
     transform: translate(-50%, -50%);
 }
@@ -387,14 +372,17 @@ h4 {
     transform: scale(1.15);
 }
 
-.icon-th-small{
+/*.icon-th-small{
     font-size: 0px;
     display: none;
+}*/
+
+footer {
+    font-size: 1rem;
 }
 
 
-
-@media (max-width:520px) {
+@media (max-width:800px) {
     h3 {
         font-size: calc(1em + 1vw);
         text-align: center;
@@ -406,14 +394,48 @@ h4 {
         padding: 0;
         overflow-x: hidden;
     }
+    .texto {
+        display: block;
+        font-size: 1.3rem;
+        top: 3px;
+        right: -5%;
+        width: 80%;
+    }
     .contacto {
         width: 100%;
     }
-    .containerr {
+    .navbarr{
+        right: auto;
+    }
+    .navegacion {
+    
+        width: auto;
+        margin: 45px auto;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 1px;
+        background: linear-gradient(to top right, black, rgb(63, 13, 13), rgb(104, 23, 84), #F7D358, goldenrod);
+        z-index: 1000;
+        border-radius: 5px;
+    
+    }
+    .menu > li > a {
+
+        display: block;
+        padding: 15px 100px;
+        color: black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size:1rem;
+        text-decoration: none;
+        width: 150px;
+    }
+    
+
+    /*.containerr {
         height: 400px;
         width: 400px;
         position: relative;
-    }
+    }*/
     #img {
        width: 100%;
         /*pmax-width: 300px;
@@ -435,7 +457,7 @@ h4 {
     font-size: 9px;
    }
 
-   .flex-container {
+   /*.flex-container {
     display: flex;
     height: 66px;
     width: 100%;
@@ -449,10 +471,10 @@ h4 {
   .in {
     background: linear-gradient(to top right, rgb(104, 23, 84), #F7D358);
     border-top-style: double;
-  }
+  }*/
 }
 
- @media (max-width:860px) {
+ /*@media (max-width:860px) {
     h3 {
         font-size: calc(1em + 1vw);
         text-align: center;
@@ -467,7 +489,7 @@ h4 {
     #img {
        width: 100%;
         /*pmax-width: 300px;
-        margin-left: 20px; */   
+        margin-left: 20px; 
     }
     .texto {
         display: block;
@@ -497,7 +519,7 @@ h4 {
     display: flex;
     height: 66px;
    } 
-}
+}*/
 
  
 
