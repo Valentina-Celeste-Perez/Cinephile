@@ -8,12 +8,14 @@
     width: 400px;
     position: relative;
 }
+
 #img {
     position: absolut;
     width: 400px 300px;
     left: 0;
     top: 0;
 }
+
 .texto {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: relative;
@@ -34,6 +36,7 @@
     right: 0;
     color: white;
 }
+
 .font {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -54,20 +57,21 @@ p {
 }
 
 body {
-    background: #232426; 
+    background: #232426;
 }
 
 h5 {
     color: whitesmoke;
 }
 
-h4{
+h4 {
     color: burlywood;
 }
 
 .navegacion a {
     color: black;
 }
+
 .navegacioninc a {
     color: black;
 }
@@ -82,11 +86,13 @@ h4{
     margin-top: 1px;
     background-color: rgb(218, 165, 32);
     z-index: 1000;
-   
+
 }
+
 .navbarr {
     right: 37%;
 }
+
 .navegacion {
     width: auto;
     margin: 45px auto;
@@ -100,8 +106,9 @@ h4{
 }
 
 .navegacion ul {
-     list-style: none;
+    list-style: none;
 }
+
 .navegacioninc {
     text-align: center;
     word-spacing: 20px;
@@ -112,23 +119,23 @@ h4{
     word-spacing: 20px;
 }
 
-.menu > li { 
+.menu>li {
     position: relative;
     display: inline-block;
 }
 
-.menu > li > a {
+.menu>li>a {
 
     display: block;
     padding: 15px 100px;
     color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size:20px;
+    font-size: 20px;
     text-decoration: none;
     width: 150px;
 }
 
-.menu li a:hover{
+.menu li a:hover {
     color: rgb(216, 216, 213);
     transition: all .3s;
 }
@@ -174,7 +181,7 @@ h4 {
 }
 
 .navegacion .navegacioninc {
-     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .menu {
@@ -191,18 +198,18 @@ h4 {
 
 
 /*contacto*/
-   
-   .contactittle {
-      text-shadow: -1px 0 black, 0 1px black, 
-                    1px 0 black, 0 -1px black;
-      
- }
 
-   .contacbody {
+.contactittle {
+    text-shadow: -1px 0 black, 0 1px black,
+        1px 0 black, 0 -1px black;
+
+}
+
+.contacbody {
     background: linear-gradient(to top right, black, rgb(63, 13, 13), rgb(104, 23, 84), #F7D358, goldenrod);
-   }
+}
 
-   .contacto {
+.contacto {
     width: 450px;
     margin: auto;
     background: rgba(0, 0, 0, 0.215);
@@ -210,23 +217,26 @@ h4 {
     box-sizing: border-box;
     margin-top: 50px;
     border-radius: 20px;
-   }
-  h2 {
+}
+
+h2 {
     color: goldenrod;
     text-align: center;
     margin: 0px;
     font-size: 30px;
     margin-bottom: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-  }
- p {
+}
+
+p {
     color: whitesmoke;
     text-align: center;
     margin: 12px;
     font-family: Georgia, 'Times New Roman', Times, serif;
- }
+}
 
-  input, textarea {
+input,
+textarea {
     width: 100%;
     margin-bottom: 20px;
     padding: 7px;
@@ -234,21 +244,23 @@ h4 {
     font-size: 14px;
     border-radius: 6px;
     font-family: monospace;
-  }
+}
 
-  textarea {
-     min-height: 100px;
-     max-height: 200px;
-     max-width: 100%;
-  }
-  #boton{
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton {
     background: rgba(252, 182, 6, 0.094);
     color: white;
     padding: 20px;
-  }
-  #boton:hover {
+}
+
+#boton:hover {
     cursor: pointer;
-  }
+}
 
 .flex-container {
     display: flex;
@@ -258,9 +270,10 @@ h4 {
 
 
 
-.inicio{
+.inicio {
     background-color: black;
 }
+
 .contenedor {
     width: 90%;
     /*max-width: 75em;*/
@@ -288,7 +301,7 @@ h4 {
     height: 350px;
     margin-bottom: 29px;
     margin-left: 35px;
-   
+
 }
 
 .portadas img {
@@ -328,7 +341,7 @@ h4 {
     font-size: 12px;
     position: absolute;
     top: 26%;
-    left: 10%;
+    left: auto;
     text-align: center;
 }
 
@@ -352,7 +365,6 @@ h4 {
     text-align: left;
 }
 
-
 .overlay h6 {
     color: goldenrod;
     font-family: 'Times New Roman', Times, serif;
@@ -369,7 +381,9 @@ h4 {
 }
 
 .contenedor-imagenes .portadas:hover {
-    transform: scale(1.15);
+   transform: translate(-5px, -5px);
+   border-radius: 7px;
+   box-shadow: 14px 14px 4px 0 rgb(40, 2, 2), 20px 20px 4px 5px rgb(53, 8, 8)
 }
 
 
@@ -390,6 +404,7 @@ footer {
         padding: 0;
         overflow-x: hidden;
     }
+
     .texto {
         display: block;
         font-size: 1.3rem;
@@ -397,14 +412,17 @@ footer {
         right: -5%;
         width: 80%;
     }
+
     .contacto {
         width: 100%;
     }
-    .navbarr{
+
+    .navbarr {
         right: auto;
     }
+
     .navegacion {
-    
+
         width: auto;
         margin: 45px auto;
         margin-left: 0px;
@@ -413,38 +431,39 @@ footer {
         background: linear-gradient(to top right, black, rgb(63, 13, 13), rgb(104, 23, 84), #F7D358, goldenrod);
         z-index: 1000;
         border-radius: 5px;
-    
+
     }
-    .menu > li > a {
+
+    .menu>li>a {
 
         display: block;
         padding: 15px 100px;
         color: black;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size:1rem;
+        font-size: 1rem;
         text-decoration: none;
         width: 150px;
     }
-    
+
     #img {
-       width: 100%;
+        width: 100%;
         /*pmax-width: 300px;
-        margin-left: 20px; */   
+        margin-left: 20px; */
     }
+
     .texto {
         display: block;
         font-size: 1.3rem;
         top: 3px;
         right: -5%;
-       
-    }    
 
-   .ing-bottom{
-      width: 100%;
-   }
-   
-   .card__link {
-    font-size: 9px;
-   }
+    }
+
+    .ing-bottom {
+        width: 100%;
+    }
+
+    .card__link {
+        font-size: 9px;
+    }
 }
-
