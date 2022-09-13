@@ -1,0 +1,22 @@
+{
+  "name": "sitio-web",
+  "version": "1.0.0",
+  "description": "proyecto coder",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Valentina-Celeste-Perez/sitio-de-peliculas.Perez.git"
+  },
+  "author": "valentina celeste perez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Valentina-Celeste-Perez/sitio-de-peliculas.Perez/issues"
+  },
+  "homepage": "https://github.com/Valentina-Celeste-Perez/sitio-de-peliculas.Perez#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}

@@ -1,0 +1,70 @@
+.contactittle {
+    text-shadow: -1px 0 black, 0 1px black,
+        1px 0 black, 0 -1px black;
+
+}
+
+.contacbody {
+    background: linear-gradient(to top right, black, rgb(63, 13, 13), rgb(104, 23, 84), #F7D358, goldenrod);
+}
+
+.contacto {
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.215);
+    padding: 40px 70px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+h2 {
+    color: goldenrod;
+    text-align: center;
+    margin: 0px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    color: whitesmoke;
+    text-align: center;
+    margin: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 6px;
+    font-family: monospace;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton {
+    background: rgba(252, 182, 6, 0.094);
+    color: white;
+    padding: 20px;
+
+    
+}
+
+#boton:hover {
+    cursor: pointer;
+}
+
+@media (max-width:500px) {
+    .contacto {
+        width: 100%;
+    }
+}

@@ -1,0 +1,47 @@
+#img {
+    position: absolut;
+    width: 400px 300px;
+    left: 0;
+    top: 0;
+}
+
+.texto {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    right: -50%;
+    top: -340px;
+    width: 500px;
+}
+.card__link {
+    margin: 10px;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: white;
+}
+.inicio {
+    background-color: black;
+}
+
+@media (max-width:890px) {
+    #img {
+        width: 100%;
+        /*pmax-width: 300px;
+        margin-left: 20px; */
+    }
+
+    .texto {
+        display: block;
+        font-size: 1.3rem;
+        top: 3px;
+        right: -5%;
+    }
+    .card__link {
+        font-size: 9px;
+    }
+}
