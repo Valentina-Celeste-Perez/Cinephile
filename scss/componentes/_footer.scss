@@ -1,0 +1,44 @@
+.footer_p {
+    color: $fontwhite;
+    padding: 10px;
+    height: auto;
+    background-color: rgba(218, 165, 32, 0.235);
+
+}
+
+
+  $iconsocialmedia: (
+     facebook: #0000ff,
+     correo: #B40404 ,
+  );
+
+  @each $namesocial, $coloricon in $iconsocialmedia {
+    .icon-#{$namesocial} {
+        color: $fontwhite;
+        font-size: 30px;
+        transition: all .3s;
+
+
+        &:hover {
+            color: $coloricon;
+        }
+    }
+
+  }
+ 
+
+
+footer p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    position: relative;
+    text-align: center;
+}
+
+.año {
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    color: $primary;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

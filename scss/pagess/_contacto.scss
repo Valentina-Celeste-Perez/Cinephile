@@ -5,7 +5,7 @@
 }
 
 .contacbody {
-    background: linear-gradient(to top right, black, rgb(63, 13, 13), rgb(104, 23, 84), #F7D358, goldenrod);
+    background: $navbarcolor;
 }
 
 .contacto {
@@ -19,7 +19,7 @@
 }
 
 h2 {
-    color: goldenrod;
+    color: $primary;
     text-align: center;
     margin: 0px;
     font-size: 30px;
@@ -36,12 +36,11 @@ p {
 
 input,
 textarea {
-    width: 100%;
+    @include funcional ( 100%, auto, 6px );
     margin-bottom: 20px;
     padding: 7px;
     box-sizing: border-box;
     font-size: 14px;
-    border-radius: 6px;
     font-family: monospace;
 }
 
@@ -63,7 +62,7 @@ textarea {
     cursor: pointer;
 }
 
-@media (max-width:500px) {
+@media (max-width:400px) {
     .contacto {
         width: 100%;
     }

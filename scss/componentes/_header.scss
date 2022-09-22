@@ -15,31 +15,81 @@
 
 }
 
-.menu>li {
+.menu > li {
     position: relative;
     display: inline-block;
     
 }
  
 .menu > li > a {
-    display: block;
-    padding: 15px 100px;
+    @extend .disptext;
+    font-size: 1.3rem;
     color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
     text-decoration: none;
     width: 150px;
 
 }
 .menu li a:hover {
-    color: rgb(216, 216, 213);
+    color: rgb(201, 201, 199);
     transition: all .3s;
  }
-
 
 
 .flex-container {
     display: flex;
     background-color: $primary;
     border-style: dashed;
+}
+
+
+.navegacion a {
+    color: black;
+}
+
+.navbarr {
+    right: 37%;
+}
+
+.navegacion {
+    @include funcional ( auto, auto, 45px );
+    margin: 45px auto;
+    margin-left: 125px;
+    margin-right: 50px;
+    margin-top: 1px;
+    background: $navbarcolor;
+    z-index: 1000;
+   
+    &_ul {
+        list-style: none;
+    }
+}
+
+
+
+.navegacion {
+    text-align: center;
+    word-spacing: 20px;
+}
+
+.submenu {
+    position: absolute;
+    background-color: rgba(218, 165, 32, 0.664);
+    width: 130px;
+    opacity: 0;
+    transition: "opacity 1.5s";
+    z-index: 1000;
+}
+
+.submenu li a {
+    @extend .disptext;
+    color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
 }

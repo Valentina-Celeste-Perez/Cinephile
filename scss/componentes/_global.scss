@@ -28,3 +28,40 @@ footer {
 .font {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h4 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navegacion .navegacioninc {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.submenu {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.bodys {
+    background: rgba(0, 0, 0, 0.89);
+}
+
+.disptext {
+    display: block;
+    padding: 15px;
+}
+
+@mixin funcional ($width, $heigth, $radius) {
+     width: $width;
+     height: $heigth;
+     border-radius: $radius;
+}

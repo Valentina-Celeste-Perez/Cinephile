@@ -1,0 +1,70 @@
+@media (max-width:800px) {
+    h3 {
+        font-size: calc(1em + 1vw);
+        text-align: center;
+        margin-top: 7px;
+    }
+
+    html body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .texto {
+        display: block;
+        font-size: 1.3rem;
+        top: 3px;
+        right: -5%;
+        width: 80%;
+    }
+
+    .contacto {
+        width: 100%;
+    }
+
+    .navbarr {
+        right: auto;
+    }
+
+    .navegacion {
+
+        width: auto;
+        margin: 45px auto;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 1px;
+        background: $navbarcolor;
+        z-index: 1000;
+        border-radius: 5px;
+
+    }
+
+    .menu>li>a {
+
+        padding: 15px 100px;
+        color: black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-decoration: none;
+        width: 150px;
+        right: -5%;
+    }
+
+    #img {
+        width: 100%;
+        
+    }
+
+    .texto {
+        right: -5%;
+
+    }
+
+    .ing-bottom {
+        width: 100%;
+    }
+
+    .card__link {
+        font-size: 9px;
+    }
+}

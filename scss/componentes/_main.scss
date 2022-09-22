@@ -1,0 +1,96 @@
+
+/*portadas animaciones*/
+
+.contenedor-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 3px;
+}
+
+.contenedor-imagenes .portadas {
+    width: 250px;
+    position: relative;
+    height: 350px;
+    margin-bottom: 29px;
+    margin-left: 35px;
+}
+
+.portadas img {
+    @include funcional ( 100%, 100%, 5% );
+    object-fit: cover;
+    position: relative;
+}
+
+.overlay {
+    @include funcional ( 100%, 0, 11px );
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(6, 5, 5, 0.731);
+    transition: .4s ease;
+    overflow: hidden;
+
+    &_strong {
+     color: $primary;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-size: 18px;
+     position: relative;
+     top: 3%;
+     left: 5%;
+     text-align: center;
+     transform: translate(-50%, -50%); 
+    }
+
+}
+
+
+.overlay h2 {
+    color: $fontwhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    position: absolute;
+    top: 26%;
+    left: auto;
+    text-align: center;
+}
+
+.overlay h4 {
+    color: $fontwhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    text-align: center;
+}
+
+.overlay h5 {
+    color: $fontwhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 11px;
+    position: absolute;
+    top: 66%;
+    left: 5%;
+    text-align: left;
+}
+
+.overlay h6 {
+    color: $primary;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    text-align: center;
+}
+
+.portadas:hover .overlay {
+    height: 100%;
+    cursor: pointer;
+}
+
+.contenedor-imagenes .portadas:hover {
+   transform: scale(1.15);
+  
+}

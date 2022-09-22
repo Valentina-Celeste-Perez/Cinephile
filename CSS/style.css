@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0; }
@@ -24,6 +25,28 @@ footer {
 .font {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+
+h4 {
+  font-family: 'Times New Roman', Times, serif; }
+
+.navegacion .navegacioninc {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+
+.menu {
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+
+.submenu {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+.bodys {
+  background: rgba(0, 0, 0, 0.89); }
+
+.disptext, .menu > li > a, .submenu li a {
+  display: block;
+  padding: 15px; }
+
 .navegacioninc {
   width: 1000px;
   margin: 5px auto;
@@ -42,22 +65,61 @@ footer {
   display: inline-block; }
 
 .menu > li > a {
-  display: block;
-  padding: 15px 100px;
+  font-size: 1.3rem;
   color: black;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 20px;
   text-decoration: none;
   width: 150px; }
 
 .menu li a:hover {
-  color: #d8d8d5;
+  color: #c9c9c7;
   transition: all .3s; }
 
 .flex-container {
   display: flex;
   background-color: goldenrod;
   border-style: dashed; }
+
+.navegacion a {
+  color: black; }
+
+.navbarr {
+  right: 37%; }
+
+.navegacion {
+  width: auto;
+  height: auto;
+  border-radius: 45px;
+  margin: 45px auto;
+  margin-left: 125px;
+  margin-right: 50px;
+  margin-top: 1px;
+  background: linear-gradient(to top right, black, #3f0d0d, #681754, #F7D358, goldenrod);
+  z-index: 1000; }
+  .navegacion_ul {
+    list-style: none; }
+
+.navegacion {
+  text-align: center;
+  word-spacing: 20px; }
+
+.submenu {
+  position: absolute;
+  background-color: rgba(218, 165, 32, 0.664);
+  width: 130px;
+  opacity: 0;
+  transition: "opacity 1.5s";
+  z-index: 1000; }
+
+.submenu li a {
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 17px;
+  text-decoration: none; }
+
+.menu li:hover .submenu {
+  visibility: visible;
+  opacity: 1; }
 
 #img {
   position: absolut;
@@ -86,6 +148,9 @@ footer {
 
 .inicio {
   background-color: black; }
+
+.card__link {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 @media (max-width: 890px) {
   #img {
@@ -132,11 +197,12 @@ p {
 input,
 textarea {
   width: 100%;
+  height: auto;
+  border-radius: 6px;
   margin-bottom: 20px;
   padding: 7px;
   box-sizing: border-box;
   font-size: 14px;
-  border-radius: 6px;
   font-family: monospace; }
 
 textarea {
@@ -152,6 +218,167 @@ textarea {
 #boton:hover {
   cursor: pointer; }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   .contacto {
     width: 100%; } }
+
+/*portadas animaciones*/
+.contenedor-imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 3px; }
+
+.contenedor-imagenes .portadas {
+  width: 250px;
+  position: relative;
+  height: 350px;
+  margin-bottom: 29px;
+  margin-left: 35px; }
+
+.portadas img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  object-fit: cover;
+  position: relative; }
+
+.overlay {
+  width: 100%;
+  height: 0;
+  border-radius: 11px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(6, 5, 5, 0.731);
+  transition: .4s ease;
+  overflow: hidden; }
+  .overlay_strong {
+    color: goldenrod;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    position: relative;
+    top: 3%;
+    left: 5%;
+    text-align: center;
+    transform: translate(-50%, -50%); }
+
+.overlay h2 {
+  color: #ffff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 12px;
+  position: absolute;
+  top: 26%;
+  left: auto;
+  text-align: center; }
+
+.overlay h4 {
+  color: #ffff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 10px;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  text-align: center; }
+
+.overlay h5 {
+  color: #ffff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 11px;
+  position: absolute;
+  top: 66%;
+  left: 5%;
+  text-align: left; }
+
+.overlay h6 {
+  color: goldenrod;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 10px;
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  text-align: center; }
+
+.portadas:hover .overlay {
+  height: 100%;
+  cursor: pointer; }
+
+.contenedor-imagenes .portadas:hover {
+  transform: scale(1.15); }
+
+@media (max-width: 800px) {
+  h3 {
+    font-size: calc(1em + 1vw);
+    text-align: center;
+    margin-top: 7px; }
+  html body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; }
+  .texto {
+    display: block;
+    font-size: 1.3rem;
+    top: 3px;
+    right: -5%;
+    width: 80%; }
+  .contacto {
+    width: 100%; }
+  .navbarr {
+    right: auto; }
+  .navegacion {
+    width: auto;
+    margin: 45px auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 1px;
+    background: linear-gradient(to top right, black, #3f0d0d, #681754, #F7D358, goldenrod);
+    z-index: 1000;
+    border-radius: 5px; }
+  .menu > li > a {
+    padding: 15px 100px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    width: 150px;
+    right: -5%; }
+  #img {
+    width: 100%; }
+  .texto {
+    right: -5%; }
+  .ing-bottom {
+    width: 100%; }
+  .card__link {
+    font-size: 9px; } }
+
+.footer_p {
+  color: #ffff;
+  padding: 10px;
+  height: auto;
+  background-color: rgba(218, 165, 32, 0.235); }
+
+.icon-facebook {
+  color: #ffff;
+  font-size: 30px;
+  transition: all .3s; }
+  .icon-facebook:hover {
+    color: #0000ff; }
+
+.icon-correo {
+  color: #ffff;
+  font-size: 30px;
+  transition: all .3s; }
+  .icon-correo:hover {
+    color: #B40404; }
+
+footer p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px;
+  position: relative;
+  text-align: center; }
+
+.año {
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+  color: goldenrod;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
