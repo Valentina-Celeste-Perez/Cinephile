@@ -8,6 +8,7 @@
     text-align: center;
     word-spacing: 20px;
     z-index: 1000;
+    position: fixed;
 
     &__a {
         color: black;
@@ -16,7 +17,7 @@
 }
 
 .menu > li {
-    position: relative;
+    
     display: inline-block;
     
 }
@@ -52,11 +53,7 @@
 }
 
 .navegacion {
-    @include funcional ( auto, auto, 45px );
-    margin: 45px auto;
-    margin-left: 125px;
-    margin-right: 50px;
-    margin-top: 1px;
+    @include funcional (auto, auto, 45px );
     background: $navbarcolor;
     z-index: 1000;
    
@@ -64,7 +61,6 @@
         list-style: none;
     }
 }
-
 
 
 .navegacion {
